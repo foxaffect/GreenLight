@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="h-full regular-font">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script></script>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body class="h-full pt-8 bg-gray-50" style="width: 1280px; margin: 0 auto;">
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <img src="logo.png" class="h-14" />
+      <!-- Search bar -->
+      <div class="flex flex-1 border-gray-300 rounded-full h-8 border-2 mx-16">
+        <input
+          class="w-full bg-transparent px-4 placeholder-gray-500 text-sm"
+          placeholder="Поиск автомобиля - введите марку или модель"
+        />
+        <img src="search.svg" class="w-5 mr-4" />
+      </div>
+      <!-- Sign In -->
+      <div class="flex">
+        <div class="flex items-center mr-12">
+          <img src="location.svg" class="w-4 mr-2" />
+          <span>Москва</span>
+        </div>
+        <button class="bg-green-500 h-8 rounded-lg px-5 text-white">
+          Войти
+        </button>
+      </div>
+    </div>
+    <!-- Title -->
+    <div class="text-center my-9 semibold-font text-xl">
+      Аренда авто в Москве
+    </div>
+    <!-- Filter set I -->
+    <div class="flex flex-1 text-sm light-font space-x-8 mb-6">
+      <div
+        class="border-gray-300 rounded-full h-7 border-2 w-44 flex justify-evenly items-center"
+      >
+        <span>от</span>
+        <span class="border-gray-300 h-6 border-r-2"></span>
+        <span>до</span>
+      </div>
+      <div
+        class="border-gray-300 rounded-full h-7 border-2 w-52 flex justify-evenly items-center"
+      >
+        <span>Бензин</span>
+        <span class="border-gray-300 h-6 border-r-2"></span>
+        <span>Дизель</span>
+        <span class="border-gray-300 h-6 border-r-2"></span>
+        <span>Газ</span>
+      </div>
+      <div
+        class="border-gray-300 rounded-full h-7 border-2 w-24 flex justify-evenly items-center"
+      >
+        <span>Тариф</span>
+        <img src="сhevron-down.svg" class="w-5" />
+      </div>
+      <div
+        class="border-gray-300 rounded-full h-7 border-2 w-44 flex justify-evenly items-center"
+      >
+        <span>Автомат</span>
+        <span class="border-gray-300 h-6 border-r-2"></span>
+        <span>Механика</span>
+      </div>
+      <div
+        class="border-gray-300 rounded-full h-7 border-2 w-24 flex justify-evenly items-center"
+      >
+        <span>Марка</span>
+        <img src="сhevron-down.svg" class="w-5" />
+      </div>
+      <div
+        class="border-gray-300 rounded-full h-7 border-2 w-24 flex justify-evenly items-center"
+      >
+        <span>Модель</span>
+        <img src="сhevron-down.svg" class="w-5" />
+      </div>
+      <div
+        class="border-gray-300 rounded-full h-7 border-2 w-24 flex justify-evenly items-center"
+      >
+        <span>По дате</span>
+      </div>
+    </div>
+    <!-- Filter set II -->
+    <div class="flex mt-4 flex-1 justify-between regular-font text-sm mb-6">
+      <div class="flex items-center">
+        <div class="border-gray-300 rounded-md border-2 w-6 h-6 mr-2"></div>
+        <span>Без комиссии</span>
+      </div>
+      <div class="flex items-center">
+        <div class="border-gray-300 rounded-md border-2 w-6 h-6 mr-2"></div>
+        <span>Без залога</span>
+      </div>
+      <div class="flex items-center">
+        <div class="border-gray-300 rounded-md border-2 w-6 h-6 mr-2"></div>
+        <span>Для самозанятых</span>
+      </div>
+      <div class="flex items-center">
+        <div class="border-gray-300 rounded-md border-2 w-6 h-6 mr-2"></div>
+        <span>Детское кресло</span>
+      </div>
+      <div class="flex items-center">
+        <div class="border-gray-300 rounded-md border-2 w-6 h-6 mr-2"></div>
+        <span>Фирменная оклейка</span>
+      </div>
+      <div class="flex items-center">
+        <div class="border-gray-300 rounded-md border-2 w-6 h-6 mr-2"></div>
+        <span>Возможность выкупа авто</span>
+      </div>
+      <div class="flex items-center">
+        <div class="border-gray-300 rounded-md border-2 w-6 h-6 mr-2"></div>
+        <span>Желтые номера</span>
+      </div>
+    </div>
+    <!-- Filter set III -->
+    <div class="mt-4 flex mb-12 space-x-8 text-sm">
+      <div class="flex border-gray-300 rounded-md h-6 border-1 w-24">
+        <input class="w-full bg-transparent px-2" placeholder="Парк" />
+        <img src="search.svg" class="w-3 mr-1" />
+      </div>
+
+      <div
+        class="border-gray-300 rounded-md h-6 border-1 w-64 flex justify-evenly items-center"
+      >
+        <span>Минимальный срок аренды</span>
+        <img src="сhevron-down.svg" class="w-5" />
+      </div>
+      <div
+        class="border-gray-300 rounded-md h-6 border-1 w-24 flex justify-evenly items-center"
+      >
+        <span>График</span>
+        <img src="сhevron-down.svg" class="w-5" />
+      </div>
+    </div>
+    <!-- Search Result Item -->
+    <div class="flex justify-between items-center h-44">
+      <!-- Photo -->
+      <img src="car.svg" class="h-44" />
+      <!-- Description -->
+      <div
+        class="flex flex-1 flex-col border-gray-300 h-full border-1 px-9 py-3 bg-white"
+      >
+        <div class="mb-2">
+          <span class="mr-1 semibold-font text-xl">Skoda Octavia</span>
+          <span class="mr-6 text-xl">2018</span>
+          <span class="semibold-font text-sm">Парк:</span>
+          <span class="text-sm">ТБК</span>
+        </div>
+        <div class="mb-2">
+          <div class="flex text-sm medium-font mb-2">
+            <div class="flex justify-center items-center mr-8">
+              <div
+                class="mr-2 bg-gray-100 border-gray-200 h-6 w-6 border-1 rounded-md flex items-center justify-center"
+              >
+                <img src="transmission.svg" class="w-4" />
+              </div>
+              <span>Автомат</span>
+            </div>
+
+            <div class="flex justify-center items-center mr-8">
+              <div
+                class="mr-2 bg-gray-100 border-gray-200 h-6 w-6 border-1 rounded-md flex items-center justify-center"
+              >
+                <img src="pump.svg" class="w-4" />
+              </div>
+              <span>Бензин</span>
+            </div>
+          </div>
+          <div></div>
+        </div>
+
+        <div
+          class="bg-gray-100 border-gray-300 border-1 rounded-xl p-2 w-full text-xs medium-font"
+        >
+          Таксопарк "ТБК" выдает автомобили в аренду для работы в такси. График
+          работы 6/1 ОСАГО, диагностическая карта, Т.О. и ремонт за счет
+          компании, поддержка водителей 24/7.
+        </div>
+      </div>
+      <!-- Pricing n Booking -->
+      <div
+        class="flex flex-col w-3/12 border-gray-300 h-full border-1 border-l-0 rounded-r-2xl bg-white p-6"
+      >
+        <div class="flex items-center mb-4">
+          <span class="medium-font text-2xl mr-1">2.300 </span>
+          <span class="regular-font text-2xl">₽</span>
+          <span class="medium-font text-lg">/</span>
+          <span class="medium-font text-lg">день</span>
+        </div>
+        <div class="mb-2">
+          <div class="flex text-xs medium-font mb-2">
+            <div class="flex justify-center items-center mr-2">
+              <div
+                class="mr-2 bg-gray-100 border-gray-200 h-6 w-6 border-1 rounded-md flex items-center justify-center"
+              >
+                <img src="pencil.svg" class="w-4" />
+              </div>
+              <span>Без залога</span>
+            </div>
+
+            <div class="flex justify-center items-center w-28">
+              <div
+                class="mr-2 bg-gray-100 border-gray-200 h-6 w-6 border-1 rounded-md flex items-center justify-center"
+              >
+                <img src="commission.svg" class="w-4" />
+              </div>
+              <span>Комиссия +4%</span>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <button
+          class="bg-green-500 h-12 rounded-lg semibold-font text-md text-white w-full"
+        >
+          Забронировать
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
